@@ -6,31 +6,30 @@
     <title>Nutraining | Home</title>
     <link
       rel="icon"
-      href="{{ url_for('static', filename='images/favicon-16x16.png') }}"
+      href="../static/images/favicon-16x16.png"
       type="image/x-icon"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='css/home.css') }}"
+      href="../static/css/home.css"
     />
     <link
       rel="stylesheet"
-      href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}"
+      href="../static/fontawesome/css/all.min.css"
     />
   </head>
   <body>
     <nav class="navbar">
       <div class="navbar-logo">
         <img
-          src="{{ url_for('static', filename='images/logo.png') }}"
+          src="../static/images/logo.png"
           alt="Logo da Nutraining"
         />
       </div>
-      <a href="{{ url_for('index') }}" class="active">Home</a>
       <a href="#nutrition">Nutrição</a>
       <a href="#exercise">Exercícios</a>
       <a href="#contact">Contato</a>
-      <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+      <a href="../templates/login.html" class="login-btn">Login</a>
     </nav>
 
     <main class="home-container">
@@ -46,7 +45,7 @@
           <div class="cards">
             <div class="card">
               <img
-                src="{{ url_for('static', filename='images/nutrition1.jpg') }}"
+                src="../static/images/nutrition1.jpg"
                 alt="Prato com alimentos saudáveis"
               />
               <p>Opte por alimentos ricos em fibras, vitaminas e minerais.</p>
@@ -59,7 +58,7 @@
           <div class="cards">
             <div class="card">
               <img
-                src="{{ url_for('static', filename='images/exercise1.jpg') }}"
+                src="../static/images/exercise1.jpg"
                 alt="Pessoa fazendo exercício de alongamento"
               />
               <p>Exercícios de alongamento podem melhorar a flexibilidade.</p>
