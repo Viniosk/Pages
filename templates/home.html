@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutraining | Home</title>
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='images/favicon-16x16.png') }}"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/home.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='fontawesome/css/all.min.css') }}"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <img
+          src="{{ url_for('static', filename='images/logo.png') }}"
+          alt="Logo da Nutraining"
+        />
+      </div>
+      <a href="{{ url_for('index') }}" class="active">Home</a>
+      <a href="#nutrition">Nutrição</a>
+      <a href="#exercise">Exercícios</a>
+      <a href="#contact">Contato</a>
+      <a href="{{ url_for('login') }}" class="login-btn">Login</a>
+    </nav>
+
+    <main class="home-container">
+      <h1>Bem-Vindo à Nutraining!</h1>
+      <div class="home-content">
+        <p>
+          Explore e descubra os benefícios da nutrição ativa e exercícios
+          saudáveis!
+        </p>
+
+        <section class="nutrition-section" id="nutrition">
+          <h2>Nutrição</h2>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="{{ url_for('static', filename='images/nutrition1.jpg') }}"
+                alt="Prato com alimentos saudáveis"
+              />
+              <p>Opte por alimentos ricos em fibras, vitaminas e minerais.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="exercise-section" id="exercise">
+          <h2>Exercícios</h2>
+          <div class="cards">
+            <div class="card">
+              <img
+                src="{{ url_for('static', filename='images/exercise1.jpg') }}"
+                alt="Pessoa fazendo exercício de alongamento"
+              />
+              <p>Exercícios de alongamento podem melhorar a flexibilidade.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="footer">
+        <div class="footer-content">
+          <div class="footer-section about">
+            <h2>Sobre a Nutraining</h2>
+            <p>
+              Oferecemos informações sobre nutrição e exercícios para uma vida
+              saudável.
+            </p>
+          </div>
+          <div class="footer-section links">
+            <h2>Links úteis</h2>
+            <ul>
+              <li><a href="#">Termos de uso</a></li>
+              <li><a href="#">Política de privacidade</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contate-nos</h2>
+            <p>
+              <a href="mailto:contato@nutraining.com">contato@nutraining.com</a>
+            </p>
+            <p>+55 11 1234-5678</p>
+          </div>
+          <div class="footer-section socials">
+            <h2>Redes Sociais</h2>
+            <a href="#" class="fa-icon">
+              <i class="fab fa-facebook-f"></i> Facebook </a
+            ><br />
+            <a href="#" class="fa-icon">
+              <i class="fab fa-instagram"></i> Instagram </a
+            ><br />
+            <a href="#" class="fa-icon">
+              <i class="fab fa-twitter"></i> Twitter
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2023 Nutraining. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

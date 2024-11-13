@@ -1,0 +1,286 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #eef2f7;
+  margin: 0;
+  padding: 0;
+}
+
+nav.navbar {
+  width: 100%;
+  background-color: #333;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-shadow: 0px 2px 5px #00000033;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+nav.navbar:hover {
+  box-shadow: 0px 4px 10px #00000033;
+}
+
+.navbar-logo img {
+  width: 60px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #4caf50;
+  color: black;
+}
+
+.main {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px #00000033;
+  text-align: center;
+  width: 100%;
+  margin: 80px 0 0;
+}
+
+h1 {
+  color: #333;
+  font-size: 2.5em;
+  margin-top: 20px;
+}
+
+.home-content {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.nutrition-section h2,
+.exercise-section h2 {
+  font-size: 2em;
+  color: #4caf50;
+  margin-top: 30px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px 0px #00000055;
+}
+
+.card img {
+  max-width: 100%;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.card img:hover {
+  transform: scale(1.1);
+}
+
+.card p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+}
+
+.footer {
+  width: 100%;
+  background-color: #222;
+  padding: 40px 0;
+  color: white;
+}
+
+.footer h2 {
+  border-bottom: 2px solid #4caf50;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer li a {
+  transition: color 0.3s ease;
+}
+
+.footer li a:hover {
+  color: #4caf50;
+}
+
+.socials a {
+  margin: 0 15px;
+}
+
+.socials img {
+  height: 25px;
+  transition: opacity 0.4s;
+}
+
+.socials img:hover {
+  opacity: 0.7;
+}
+
+.navbar a:active {
+  background-color: #388e3c;
+}
+
+.login-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px #00000033;
+  transition: all 0.3s ease;
+  margin-left: auto;
+}
+
+.login-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0px 6px 8px #00000055;
+  transform: translateY(-2px);
+}
+
+.login-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0px 3px 5px #00000033;
+}
+
+@media (max-width: 900px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  nav.navbar a {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .footer-content {
+    padding: 0 10px;
+  }
+}
+
+.footer a {
+  position: relative;
+  display: inline-block;
+  color: white;
+  transition: color 0.3s ease, transform 0.3s ease, scale 0.3s ease;
+  padding-bottom: 5px;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+}
+
+.footer a:hover {
+  color: #4caf50;
+  transform: translateY(-3px) scale(1.05);
+  background-size: 100% 2px;
+}
+
+.fa-icon i {
+  font-size: 24px;
+  color: white;
+  margin-right: 8px;
+  vertical-align: middle;
+  transition: color 0.3s ease;
+}
+
+.fa-icon:hover i {
+  color: #4caf50;
+}
+
+.footer-bottom {
+  background-color: #1a1a1a;
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid #4caf50;
+  margin-top: auto;
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 0.9em;
+  color: #b3b3b3;
+}
+
+.footer-bottom a {
+  color: #b3b3b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #4caf50;
+}
